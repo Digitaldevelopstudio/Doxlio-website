@@ -1,34 +1,27 @@
-# Doxlio starter website
+# Doxlio multi-page website package
 
-A responsive, static website starter for an all-in-one document tools project.
+Includes 14 dedicated tool pages, 8 article pages, shared CSS/JavaScript, privacy/terms/contact pages, robots.txt and a sitemap listing 26 URLs.
 
-## Working in this starter
-- Text to PDF
-- Text to PNG image
-- Image to text (OCR; language data/library loaded from a third party)
-- Image resize/compress/export as JPG or PNG
-- Image to PDF
-- Search and category filters
-- Responsive landing page and tool workspace
+## Upload
+1. Extract this ZIP.
+2. Open the existing Doxlio-website GitHub repository.
+3. First use Code → Download ZIP to back up your current version.
+4. Upload all extracted files and folders to repository root, preserving tools/, articles/ and assets/.
+5. Commit changes and wait for GitHub Pages to publish.
+6. Submit https://digitaldevelopstudio.github.io/Doxlio-website/sitemap.xml in Google Search Console.
 
-## Planned placeholders (not yet working)
-PDF to Text, Word to PDF, CV & Cover Letter Builder. These are clearly labelled as planned in the UI.
-
-## Upload to GitHub Pages
-1. Create a **new repository just for Doxlio**, for example `doxlio-website`.
-2. For a GitHub Free account, make the repository public if you want to use GitHub Pages.
-3. Upload `index.html`, `styles.css`, `app.js`, `robots.txt`, and `README.md` from this folder to the repository root. You can also upload the complete folder contents using GitHub's web interface.
-4. Open **Settings → Pages**.
-5. Under Build and deployment, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-6. Wait for the published URL to appear on the Pages screen. It will usually be `https://YOUR-USERNAME.github.io/doxlio-website/`.
-7. Open the URL on a phone and laptop and test each available tool.
+## Included
+Homepage, 14 tool pages, 8 guide pages, privacy/terms/contact starter pages, shared stylesheet/scripts, sitemap and robots.txt.
 
 ## Important limitations
-- This is a front-end starter, not a complete 28-tool production platform.
-- It uses CDN libraries for PDF generation and OCR, so an internet connection is needed for those features.
-- OCR runs in the browser and language files may take time to load. Tesseract.js does not directly support PDF OCR; OCR of PDFs needs a PDF-to-image rendering step.
-- Word conversion, PDF merge/split/compression, AI tools, CV builder, accounts, subscriptions, ads, analytics, and backend APIs are not implemented yet.
-- Do not put secret API keys in frontend JavaScript. Any paid AI API should be called through a backend.
-- Before public launch, replace `hello@example.com`, add a real privacy policy/contact page, test outputs on multiple devices, and review third-party library licences and privacy.
-- GitHub Pages is best for static prototypes. GitHub documents restrictions for sites primarily directed at running a business or commercial SaaS. Before monetizing this service, review current GitHub Pages terms and consider a static host/backend architecture suitable for a commercial service.
-- Do not add a custom domain until you have purchased and verified it. When ready, configure the domain in GitHub Pages Settings and follow your registrar's DNS instructions.
+- Contact page is a placeholder; add a real monitored contact method before launch.
+- Privacy and terms are starter text; review for your business and jurisdiction.
+- Tools load third-party libraries from CDNs and need internet.
+- Urdu Nastaliq OCR may be inaccurate and needs real sample testing.
+- PDF-to-text extracts selectable text only; scanned PDFs need OCR.
+- Word-to-PDF extracts text and does not preserve complex layout/tables/images.
+- PDF-to-JPG exports one page at a time. Resume and cover letter are simple text PDFs.
+- Compression, searchable OCR PDFs, AI backend, accounts, payments, subscriptions and ads are not implemented.
+- Never place secret API keys in frontend JavaScript.
+- URLs are configured for the current GitHub Pages project URL. Update canonicals/sitemap if URL changes.
+- Test all tools in-browser before calling the deployment complete.
