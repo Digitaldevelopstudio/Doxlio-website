@@ -33,3 +33,11 @@ Homepage, 14 tool pages, 8 guide pages, privacy/terms/contact starter pages, sha
 - Cover Letter Builder now includes three layouts, PDF preview, and a separate Save PDF action.
 - Homepage cards use small custom SVG illustrations; policy, contact, and guide pages include a visual banner.
 - This is a static GitHub Pages site. Test each tool after deployment and check the browser console if a CDN library fails to load.
+
+
+## Version 4 scanner workflow
+- Added a dedicated Document Scanner page with live camera capture (HTTPS permission required), image import, multi-page thumbnails, page ordering/removal, crop sliders, rotate, brightness/contrast filters, multi-page PDF export, image export, and English OCR text download.
+- Automatic document-corner detection and perspective correction are not included; crop is manual via percentage sliders.
+- Camera access depends on browser/device permission and GitHub Pages HTTPS. Image import is the fallback.
+- Resume and cover letter now use an on-page HTML preview before PDF save; the resume PDF photo layout reserves space for the profile image.
+- JavaScript syntax check passed; hardware camera behavior and all exports still require live device testing.

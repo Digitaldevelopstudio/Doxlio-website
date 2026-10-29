@@ -28,3 +28,29 @@
 .theme-classic.letter-sheet{font-family:Georgia,serif}.theme-classic.letter-sheet header{border-bottom:1px solid #b6bdc9}.theme-accent.letter-sheet header{background:var(--doc-accent);color:#fff;margin:-50px -54px 28px;padding:28px 54px}.theme-accent.letter-sheet header h1,.theme-accent.letter-sheet header p{color:#fff}
 .scan-preview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:18px 0}.scan-thumb{border:1px solid #dfe3f4;background:#fff;border-radius:14px;padding:10px;min-width:0}.scan-thumb img{width:100%;height:180px;object-fit:contain;background:#f5f7fb;border-radius:8px}.scan-thumb div{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px}.scan-thumb .btn{padding:6px 9px;font-size:.8rem}
 @media(max-width:600px){.resume-sheet,.letter-sheet{padding:24px 20px;min-height:560px}.resume-top h1,.letter-sheet header h1{font-size:23px}.resume-photo{width:70px;height:86px}.theme-accent.letter-sheet header{margin:-24px -20px 24px;padding:22px 20px}.paper-preview{padding:8px}}
+
+/* Doxlio Smart Scanner workflow */
+.scanner-app{display:grid;gap:20px}
+.scanner-toolbar,.scanner-editor-head,.scan-pages-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.scanner-pill{font-size:.72rem;font-weight:800;letter-spacing:.12em;color:#008b80;background:#dcfaf4;padding:8px 12px;border-radius:999px}
+.scanner-camera{border-radius:24px;overflow:hidden;background:linear-gradient(145deg,#162b39,#263b4a);color:#fff;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px;text-align:center}
+.scanner-camera video{width:100%;max-height:62vh;object-fit:contain;border-radius:14px;background:#101820}
+#camera-placeholder{max-width:430px}
+.camera-symbol{width:70px;height:70px;display:grid;place-items:center;margin:0 auto 12px;border-radius:22px;background:#00b8a2;color:#fff;font-size:2.5rem}
+.scanner-camera h3{color:#fff;margin:8px 0}.scanner-camera p{color:#d9e5e8;line-height:1.6}.scanner-camera-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.scanner-editor{padding:18px;border:1px solid #e0e5f0;border-radius:22px;background:linear-gradient(145deg,#fff,#f4f7ff)}
+.scanner-editor-head h3{margin:0}.scanner-editor-head .muted{display:block;font-size:.85rem;margin-top:4px}.scan-editor-actions{display:flex;gap:8px;flex-wrap:wrap}
+.scan-crop-stage{margin:14px 0;padding:12px;min-height:180px;display:grid;place-items:center;background:#1e293b;border-radius:16px;overflow:hidden}
+#scan-canvas{max-width:100%;max-height:62vh;object-fit:contain;background:#fff;box-shadow:0 4px 20px #0003}
+.scan-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.scan-controls .field{grid-column:1/-1}
+.crop-control{padding:10px 12px;border-radius:12px;background:#fff;border:1px solid #e2e7f0}.crop-control label{display:flex;justify-content:space-between;font-size:.9rem;font-weight:650;margin-bottom:8px}.crop-control input{width:100%;accent-color:#00a995}
+.scan-tip{grid-column:1/-1;font-size:.85rem}.scan-pages-heading{margin-top:4px}.scan-pages-heading h3{margin:0 0 4px}.scan-pages-heading p{margin:0}
+.scan-page-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.scan-page-card{display:flex;gap:12px;align-items:flex-start;border:1px solid #e1e5ef;background:#fff;padding:10px;border-radius:16px;cursor:pointer;min-width:0}
+.scan-page-card.selected{border:2px solid #00a995;box-shadow:0 4px 16px #00a99518}
+.scan-page-card>img{width:82px;height:108px;object-fit:contain;background:#f1f4f8;border-radius:8px;flex-shrink:0}
+.scan-page-meta{display:grid;gap:5px;min-width:0}.scan-page-meta span{font-size:.78rem;color:#64748b;overflow-wrap:anywhere}.scan-page-buttons{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.scan-page-buttons .btn{padding:5px 8px;font-size:.8rem}
+.scan-empty{padding:28px;border:1px dashed #cbd5e1;border-radius:16px;color:#64748b;text-align:center;background:#f8faff}
+.scanner-export{padding:18px;border:1px solid #dfe5f2;border-radius:20px;background:linear-gradient(120deg,#f0efff,#effcff,#eafff7)}
+.scanner-export .fields{margin-bottom:12px}
+@media(max-width:600px){.scanner-camera{min-height:270px;padding:16px}.scanner-editor{padding:12px}.scan-controls{grid-template-columns:1fr}.scan-page-list{grid-template-columns:1fr}.scan-page-card>img{width:72px;height:96px}.scanner-export{padding:14px}}
