@@ -25,3 +25,11 @@ Homepage, 14 tool pages, 8 guide pages, privacy/terms/contact starter pages, sha
 - Never place secret API keys in frontend JavaScript.
 - URLs are configured for the current GitHub Pages project URL. Update canonicals/sitemap if URL changes.
 - Test all tools in-browser before calling the deployment complete.
+
+
+## Version 2 update
+- OCR now offers multiple language choices and tries grayscale and thresholded image variants. Recognition quality depends on the scan and language model; Urdu Nastaliq and some Arabic/Hindi fonts can still be inaccurate.
+- Resume Builder now includes three layouts, optional profile photo, PDF preview, and a separate Save PDF action.
+- Cover Letter Builder now includes three layouts, PDF preview, and a separate Save PDF action.
+- Homepage cards use small custom SVG illustrations; policy, contact, and guide pages include a visual banner.
+- This is a static GitHub Pages site. Test each tool after deployment and check the browser console if a CDN library fails to load.
