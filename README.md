@@ -41,3 +41,9 @@ Homepage, 14 tool pages, 8 guide pages, privacy/terms/contact starter pages, sha
 - Camera access depends on browser/device permission and GitHub Pages HTTPS. Image import is the fallback.
 - Resume and cover letter now use an on-page HTML preview before PDF save; the resume PDF photo layout reserves space for the profile image.
 - JavaScript syntax check passed; hardware camera behavior and all exports still require live device testing.
+
+
+## Version 5 refinements
+- Resume profile photo controls now include camera capture (mobile browser capture input), gallery multi-select (up to three), photo count, and circle/box preview styling.
+- Scanner has brightness and contrast intensity sliders, an edited-page preview area, and OCR output in an editable text box with copy/download actions rather than automatically downloading OCR results.
+- JavaScript syntax checked with Node. Actual camera, PDF rendering, and device-specific file-picker behavior should still be tested on the deployed HTTPS site.
