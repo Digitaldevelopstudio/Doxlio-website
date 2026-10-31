@@ -77,3 +77,13 @@
 #ds-crop-svg [data-hit]{cursor:grab;touch-action:none}
 #ds-crop-svg [data-hit]:active{cursor:grabbing}
 #ds-editor-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+
+/* Doxlio scanner camera/crop rendering fixes */
+.ds-camera{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:100000!important}
+.ds-camera video{object-fit:cover!important}
+.ds-processing{display:none;position:absolute;inset:0;z-index:9;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:rgba(0,0,0,.52);color:white;font-size:18px}
+.ds-processing.active{display:flex}
+.ds-processing-ring{width:58px;height:58px;border:4px solid #ffffff55;border-top-color:#00d3b4;border-radius:50%;animation:ds-spin .7s linear infinite}
+@keyframes ds-spin{to{transform:rotate(360deg)}}
+.ds-crop-area svg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;transform:none!important}
+.ds-crop-area{touch-action:none}
