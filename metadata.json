@@ -1,0 +1,6 @@
+{
+  "name": "Doxlio - Document Productivity Platform",
+  "description": "Every document. One smart place. Complete online document productivity suite: mobile document scanner, PDF tools, converters, AI document assistant, and business generators.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
