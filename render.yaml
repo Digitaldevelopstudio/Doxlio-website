@@ -2,7 +2,7 @@ services:
   - type: web
     name: doxlio
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install --include=dev && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
